@@ -1,0 +1,11 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content"></view></cu-custom>
+
+<view class='margin-lg bg-white padding-lg radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>更多功能</view>
+  <view class=''>
+    <view class='margin-top-sm'>Hi~，各位小伙伴们大家好，欢迎使用勤工助学小程序！</view>
+    <view class='margin-top-sm'>该项目是团队参加学校的申报项目，由个人开发的勤工助学小程序，致力于服务武传学子，帮你找到校园内合适你的兼职工作，功能还在继续开发中，陆续会与大家见面❤️。</view>
+    <view class='margin-top-sm'>如果您在使用的过程中，遇到什么问题，或者有更好的建议，欢迎反馈！٩(๑❛ᴗ❛๑)۶</view>
+    <view class='margin-top-sm'>---2020/05/10---</view>
+  </view>
+</view>

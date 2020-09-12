@@ -1,0 +1,41 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{false}}">
+  <view slot="content">动态</view>
+</cu-custom>
+
+<scroll-view scroll-y class="scrollPage">
+  <view class="list" wx:for="{{queryResult}}" wx:for-item='item' wx:key="index">
+    <view class="userF" bindtap="watchdt" data-item="{{item}}">
+      <image src="{{item.UserInfo.avatarUrl}}"></image>
+      <view>
+        <text class="bbg">{{item.UserInfo.nickName}}</text>
+        <text class="xxg">{{item.create_time}}</text>
+      </view>
+    </view>
+    <view class="newscontent" bindtap="watchdt" data-item="{{item}}">
+      {{item.content}}
+    </view>
+    <view class="imglist">
+      <image wx:for="{{item.image}}" bindtap="previewImage" data-item="{{item.image}}" data-index="{{idx}}" data-src="{{it}}" wx:for-item="it" wx:for-index="idx" wx:key="idx" src="{{it}}"></image>
+
+    </view>
+    <view class="result_zan_ping" data-item="{{item}}">
+
+      <view style="margin-left:auto;height:40rpx;line-height:40rpx" id="id{{index}}" bindtap="zan" data-id="{{item._id}}">
+        <i-icon type="praise" color="#11cd6e" size="20" />
+        <text style="color:rgb(150, 150, 150)">({{item.zan>99?"99+":item.zan}})</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="container">
+		<view bindtap="toedit" class="shadow shadow-lg">
+			<text class="cuIcon-post text-xl"></text>
+		</view>
+	</view> -->
+
+  <!-- tui-fab -->
+  <tui-fab left="{{left}}" right="{{right}}" bottom="{{bottom}}" bgColor="{{bgColor}}" btnList="{{list}}" bind:click="onClick">
+  </tui-fab>
+
+
+</scroll-view>

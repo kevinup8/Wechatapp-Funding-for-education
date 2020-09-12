@@ -1,0 +1,9 @@
+<!--pages/newsDetail/newsDetail.wxml-->
+<view class="detail">
+  <view class="d-title">{{item.title}}</view>
+  <view class="d-date">{{item.date}}</view>
+  <view class="d-detail">
+    <image v-if="{{item.img}}" src="{{item.img}}"></image>
+    <view>{{item.detail}}</view>
+  </view>
+</view>

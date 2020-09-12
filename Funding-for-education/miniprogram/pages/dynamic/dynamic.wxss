@@ -1,0 +1,94 @@
+.container {
+  position: fixed;
+  right: 2vw;
+  top: 80vh;
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #cccccc;
+  z-index: 999
+}
+
+.banner {
+  width: 100%;
+  height: 220px;
+  box-shadow: 5px 5px 10px #1bdbd2;
+}
+.banner image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+
+.scrollPage {
+  width: 100%;
+  /* background: #fff; */
+}
+.list {
+  margin-top: 10rpx rgb(255, 255, 255) solid;
+  width: 90vw;
+  margin:3vh 5vw;
+  background: #fff;
+  border-radius: 20rpx;
+  border:1px rgb(247, 245, 245) solid;
+  padding: 10rpx;
+  box-shadow: 0 0 10rpx #e1e4e4;
+}
+.userF {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.userF image {
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+  margin-right: 16rpx;
+  
+}
+.userF view {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+.bbg {
+  color: rgb(90, 90, 90);
+  font-size: 26rpx;
+}
+.xxg {
+  color: rgb(150, 150, 150);
+  font-size: 26rpx;
+}
+.newscontent {
+  color: #666;
+  font-size: 32rpx;
+  padding: 3vh 0;
+  border-top: 1rpx solid #f1fdff;
+  margin: 0 0 0 13rpx
+}
+.imglist {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: 0 0 0 10rpx
+}
+.imglist image {
+  width: 20vw;
+  height: 20vw;
+  margin:0.2vw  .2vw;
+}
+.result_zan_ping{
+  display: flex;
+  height: 40rpx;
+  line-height: 50rpx;
+  margin: 30rpx 0 0 30rpx;
+  
+
+}

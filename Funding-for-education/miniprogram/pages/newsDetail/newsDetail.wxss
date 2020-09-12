@@ -1,0 +1,26 @@
+/* pages/newsDetail/newsDetail.wxss */
+.d-title {
+  text-align: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 42rpx;
+}
+.d-date {
+  text-align: center;
+  font-size: 36rpx;
+  color: #666;
+}
+.d-detail {
+  text-indent: 2rem;
+  width: 90vw;
+  margin: 3vh 5vw;
+  color: #666;
+  line-height: 2;
+}
+.d-detail image {
+  max-width: 100%;
+  width: auto;
+  display: block;
+  height: 300rpx;
+  margin: 10rpx auto;
+}

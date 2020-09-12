@@ -1,0 +1,63 @@
+<!--miniprogram/pages/JobsForm/form.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isCustom="{{true}}">
+	<view slot="content">提交信息</view>
+</cu-custom>
+
+
+<form>
+ <view class="cu-form-group margin-top">
+		<view class="title">学院</view>
+		<picker bindchange="collegeChange"  range="{{college}}" range-key="name">
+			<view class="picker">
+				{{selectedcollege.name}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">年级</view>
+		<picker bindchange="classChange"  range="{{class}}" range-key="name">
+			<view class="picker">
+				{{selectedclass.name}}
+			</view>
+		</picker>
+	</view>
+		<view class="cu-form-group">
+		<view class="title">学号</view>
+		<input placeholder="输入你的学号" type="number" bindinput="changexh" value="{{xh}}"></input>
+	</view>
+	<view class="cu-form-group margin-top">
+		<view class="title">姓名</view>
+		<input placeholder="输入你的姓名" bindinput="changern" value="{{rn}}" ></input>
+	</view>
+  <view class="cu-form-group ">
+		<view class="title">性别</view>
+		<picker bindchange="sexChange"  range="{{sex}}" range-key="name">
+			<view class="picker">
+				{{selectedsex.name}}
+			</view>
+		</picker>
+	</view>
+
+	<view class="cu-form-group">
+		<view class="title">手机号码</view>
+		<input placeholder="输入你的联系方式" type="number" value="{{mobile}}" bindinput="changepn"></input>
+		<view class="cu-capsule radius">
+			
+			
+				<i-button bind:getphonenumber='getPhoneNumber' open-type="getPhoneNumber"   size="mini" type="info">自动填写</i-button>
+		
+		</view>
+	</view>
+
+		<view class="cu-form-group">
+	
+		<textarea placeholder="备注信息" value="{{notes}}" bindinput="changeNotes"></textarea>
+
+	</view>
+
+	
+<i-button bind:click="signUp" long="true" shape="circle" i-class='cu-btn bg-green lg margin-top-xl flex flex-direction' type="info">确认报名</i-button>
+
+
+</form>
+

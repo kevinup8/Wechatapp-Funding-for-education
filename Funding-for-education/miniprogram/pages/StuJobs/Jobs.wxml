@@ -1,0 +1,53 @@
+<!--miniprogram/pages/StuJobs/Jobs.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">勤工助学</view>
+</cu-custom>
+
+
+<!--{{DotStyle?'square-dot':'round-dot'}} 指节点样式-->
+<swiper class="card-swiper " circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}" wx:key="index">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="panel__title">精选推荐</view>
+<i-notice-bar icon="systemprompt" loop>
+  欢迎各位同学报名参加校内活动！
+</i-notice-bar>
+
+<block wx:for="{{stationsList}}" wx:for-item='item' wx:for-index='index' wx:key="key">
+  <view class="jx-item">
+    <view bindtap="showdetail" wx:if="{{item.sort == 0}}">
+      <text class="jx-item-zhiding">置顶</text>
+    </view>
+    <view class="jx-item-title" bindtap="showdetail" data-item="{{item}}">
+      <text>{{item.title}}</text>
+    </view>
+    <view class="contents">
+      <view class="jx-item-dis" bindtap="showdetail" data-item="{{item}}">
+        <text>{{item.price}}元/</text>
+
+        <text wx:if="{{item.unit=='day'}}">天</text>
+        <text wx:elif="{{item.unit=='week'}}">周</text>
+        <text wx:elif="{{item.unit=='month'}}">月</text>
+        <text style="padding-left:50rpx">{{item.people}} 人</text>
+      </view>
+      <view bindtap="showdetail" data-item="{{item}}">{{item.num_data>=180?'长期':'短期'}}</view>
+      <view class="jx-item-button">
+        <i-button bindtap="handleClickBaoming" data-id="{{item._id}}" i-class="jx-item-button-diy" size="small" data-disabled="{{item.issignup}}" disabled="{{item.issignup}}" type="error">{{item.issignup?'已报名':'报名'}}</i-button>
+      </view>
+    </view>
+    <view class="jx-item-bottom" bindtap="showdetail" data-item="{{item}}">
+
+      <view wx:for="{{item.class}}" wx:for-item='class' wx:for-index='classindex' wx:key="key">
+        <text>{{class}}{{classindex==item.class.length-1?'':'、'}}</text>
+      </view>
+      <view style="margin-left:auto"> {{item.updatetime}}</view>
+    </view>
+  </view>
+</block>

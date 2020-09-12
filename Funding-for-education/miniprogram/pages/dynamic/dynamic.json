@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+      "cu-custom": "/colorui/components/cu-custom",
+      "tui-fab":"../../components//tui-fab/tui-fab",
+      "i-icon": "../dist/icon/index"
+  },
+  "enablePullDownRefresh": true
+}

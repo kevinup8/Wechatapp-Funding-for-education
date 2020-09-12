@@ -1,0 +1,35 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">发布动态</view>
+</cu-custom>
+
+
+
+<view class="margin-xl padding-lg bg-white radius shadow-lg">
+
+	<view>
+		<textarea placeholder="分享新鲜事...(已接入小程序官方审核，违规内容将不予展示哦~)" maxlength="-1" bindinput="niubiT" placeholder-class='placeholder' name="issue" value="{{niubi}}"></textarea>
+	</view>
+
+	<view class="cu-bar bg-white">
+		<view class="action"></view>
+		<view class="action">
+			{{imgList.length}}/3
+		</view>
+	</view>
+
+	<view class="cu-form-group">
+		<view class="grid col-3 grid-square flex-sub">
+			<view bindtap="ViewImage" class="bg-img" data-url="{{imgList[index]}}" wx:for="{{imgList}}" wx:key="index">
+				<image mode='aspectFill' src='{{imgList[index]}}'></image>
+				<view catchtap="DelImg" class="cu-tag bg-black" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view bindtap="ChooseImage" class="solids" wx:if="{{imgList.length<3}}">
+				<text class="cuIcon-camerafill"></text>
+			</view>
+		</view>
+	</view>
+	<button class='cu-btn bg-green lg margin-top-xl flex flex-direction' bindtap="onAdd">立即发布</button>
+</view>

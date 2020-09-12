@@ -1,0 +1,54 @@
+<cu-custom isBack="{{true}}" bgColor="bg-gradual-pink">
+<view slot="backText">返回</view>
+	<view slot="content">勤工助学报名管理</view>
+</cu-custom>
+<block wx:if="{{signList.length == 0}}">
+	<view class="nopeople"><image style="width:500rpx;height:490rpx" src="../../images/nopeople.png"></image></view>
+</block>
+<block wx:if="{{signList.length >0}}">
+	<view wx:for="{{signList}}" wx:for-item="list" wx:for-index='signIndex' class="list" wx:key="signIndex">
+
+		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class" style="font-size:35rpx">{{list.stationinfo.title}}</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888;text-align:right">{{list.createtime}}</i-col>
+
+		</i-row>
+		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class">姓名</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888">{{list.realName}}</i-col>
+
+		</i-row>
+		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class">学号</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888">{{list.stu_Num}}</i-col>
+
+		</i-row>
+        		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class">手机号</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888">{{list.phoneNum}}</i-col>
+
+		</i-row>
+		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class">年级</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888">{{list.class}}</i-col>
+
+		</i-row>
+		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class">学院</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888">{{list.college}}</i-col>
+
+		</i-row>
+
+
+		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class">性别</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888">{{list.sex}}</i-col>
+
+		</i-row>
+		<i-row i-class='listheader'>
+			<i-col span="8" i-class="col-class">备注</i-col>
+			<i-col span="14" offset="2" i-class="col-class" style="color:#888">{{list.notes}}</i-col>
+
+		</i-row>
+	</view>
+</block>

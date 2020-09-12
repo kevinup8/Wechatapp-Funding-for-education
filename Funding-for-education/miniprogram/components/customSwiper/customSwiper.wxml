@@ -1,0 +1,5 @@
+<swiper autoplay="{{true}}" bindchange="swiperChange" circular="true" class="swiper-block" current="{{0}}" indicatorActiveColor="#333" indicatorColor="#8a8a8a" indicatorDots="{{false}}" interval="5000" nextMargin="100rpx" previousMargin="100rpx">
+	<swiper-item class="swiper-item " wx:for="{{imgUrls}}" wx:key="index">
+		<image class="slide-image {{currentIndex==index?'active':'common'}}" mode="aspectFill" src="{{item}}"></image>
+	</swiper-item>
+</swiper>

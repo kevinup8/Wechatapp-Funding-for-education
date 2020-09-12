@@ -1,0 +1,93 @@
+<scroll-view scroll-y class="scrollPage">
+  <!-- <view class="UCenter-bg">
+		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+		<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		<image src="https://www.itwcn.xyz/wp-content/uploads/2020/04/wave.gif" class="gif-wave" style="padding-bottom:0;"></image>
+	</view> -->
+
+  <view class="UCenter-bg">
+    <block wx:if='{{isLogin}}'>
+      <image class="userinfo-avatar" src="{{src}}"></image>
+      <text class="userinfo-nickname">{{nickName}}</text>
+    </block>
+    <button wx:else open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">获取头像昵称</button>
+  </view>
+
+
+  <!-- <view class="cu-bar bg-white solid-bottom ">
+    <view class='action'>
+      <text class='cuIcon-titles text-orange '></text> 关于
+    </view>
+  </view> -->
+
+  <view class='middle-container'>
+    <view bindtap='xiaoxi' class='middle-item menuleft' bindtap="xiaoxi">
+      <image class='ticket-img' src='../../images/user/xiaoxi.png'></image>
+      <text class='middle-tag'>消息</text>
+    </view>
+    <view bindtap='daka' class='middle-item menuleft'>
+      <image class='car-img' src='../../images/user/daka.png'></image>
+      <text class='middle-tag'>打卡</text>
+    </view>
+  </view>
+
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+
+    <view class="cu-item arrow" wx:if="{{isLogin && userType == 'admin'}}">
+      <view class="content" bindtap="toRoot">
+        <text class="cuIcon-vip text-red"></text>
+        <text class="text-grey">管理员入口</text>
+      </view>
+    </view>
+
+
+    <view class="cu-item arrow">
+      <view class="content" bindtap="callTelePhone">
+        <text class="cuIcon-dianhua text-black"></text>
+        <text class="text-grey">联系管理员</text>
+      </view>
+    </view>
+
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/user-about/about" hover-class="none">
+        <text class="cuIcon-more text-green"></text>
+        <text class="text-grey">更多功能</text>
+      </navigator>
+    </view>
+
+    <!-- <view class="cu-item arrow">
+			<navigator class="content" url="/pages/user-about/log" hover-class="none">
+				<text class="cuIcon-formfill text-green"></text>
+				<text class="text-grey">开发日志</text>
+			</navigator>
+		</view> -->
+
+
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-creativefill text-orange"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+
+
+
+
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="contact" bindcontact="handleContact">
+        <text class="cuIcon-servicefill text-cyan"></text>
+        <text class="text-grey">客服功能</text>
+      </button>
+    </view>
+
+    <!-- <view class="cu-item arrow">
+			<button class="cu-btn content" bindtap="clearStorge">
+				<text class="cuIcon-repairfill text-blue"></text>
+				<text class="text-grey">清除缓存</text>
+			</button>
+		</view> -->
+
+  </view>
+
+</scroll-view>

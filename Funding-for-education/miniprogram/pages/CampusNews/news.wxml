@@ -1,0 +1,25 @@
+<cu-custom bgColor="bg-gradual-blue" isCustom="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">校园资讯</view>
+</cu-custom>
+
+<scroll-view scroll-y class="scrollPage">
+	<view class="list" wx:for="{{queryResult}}" wx:key="index">
+		<view class="userF">
+			<image src="../../images/bbt.png"></image>
+			<view>
+				<text class="bbg">{{item.title}}</text>
+				<text class="xxg">{{item.createtime}}</text>
+			</view>
+		</view>
+		<view class="newscontent">
+			{{item.count}}
+		</view>
+    <view class="imglist">
+      <image wx:for="{{item.imglist}}" wx:for-item="it" wx:for-index="idx" wx:key="idx" src="{{it}}" ></image>
+    </view>
+	</view>
+
+
+
+</scroll-view>

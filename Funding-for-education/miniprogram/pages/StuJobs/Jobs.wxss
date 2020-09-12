@@ -1,0 +1,128 @@
+/* miniprogram/pages/StuJobs/Jobs.wxss */
+
+.tower-swiper .tower-item {
+  transform: scale(calc(0.5 + var(--index) / 10));
+  margin-left: calc(var(--left) * 100rpx - 150rpx);
+  z-index: var(--index);
+}
+.panel__title {
+  position: relative;
+  margin-bottom: 1.06667rem;
+  padding-left: 1.06667rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.panel__title::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0.512rem;
+  top: 50%;
+  margin-top: -0.42667rem;
+  width: 6rpx;
+  height: 0.85333rem;
+  background-color: #6190e8;
+  box-shadow: 0 0.14933rem 0.256rem 0 rgba(97, 144, 232, 0.2);
+  border-radius: 1rpx;
+}
+
+
+.container_tui_notice{
+  padding-top: 120rpx;
+}
+.tui-notice-board {
+  width: 100%;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  height: 60rpx;
+  background: #fff8d5;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.tui-icon-bg {
+  background: #fff8d5;
+  padding-left: 30rpx;
+  position: relative;
+  z-index: 10;
+}
+.tui-rolling-icon {
+  margin-right: 12rpx;
+}
+.tui-scorll-view {
+  flex: 1;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #f54f46;
+}
+.tui-notice{
+   transform: translateX(100%);
+}
+.tui-animation {
+  -webkit-animation: tui-rolling 12s linear infinite;
+  animation: tui-rolling 12s linear infinite;
+}
+
+
+.contents{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+
+}
+.jx-item{
+  background: #fff;
+  margin: 30rpx 15rpx;
+  padding: 10rpx 15rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 5rpx #ccc;
+  
+}
+.jx-item-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  font-weight: 500;
+
+}
+.jx-item-button{
+  margin: auto 20rpx auto auto;
+
+}
+.jx-item-button-diy{
+  width: 140rpx;
+  height: 60rpx !important;
+  line-height: 60rpx !important;
+  margin: auto 0;
+  border-radius: 10rpx !important;
+
+}
+.jx-item-dis{
+  width: 40%;
+  color: rgb(255, 94, 0);
+}
+.jx-item-bottom{
+  display: flex;
+  font-size: 24rpx;
+  border-top: 1rpx solid #d1eaf3;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #888;
+}
+.jx-item-zhiding{
+  background: red;
+  color: #fff;
+  padding: 5rpx 15rpx;
+  border-radius: 5rpx;
+  font-size: 24rpx;
+
+}
+.jx-item-class{
+  width: 50%;
+}

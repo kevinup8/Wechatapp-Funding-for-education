@@ -1,0 +1,8 @@
+/* miniprogram/pages/JobsForm/form.wxss */
+.baoming{
+  margin-top: 80rpx !important;
+  
+}
+.cu-form-group input {
+  text-align: right;
+}

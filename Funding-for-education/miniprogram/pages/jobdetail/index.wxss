@@ -1,0 +1,34 @@
+/* pages/jobdetail/index.wxss */
+.jobdt-content{
+  background: #fff;
+  margin: 30rpx 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding: 10rpx;
+}
+.jobdt-header{
+  height: 130rpx;
+
+}
+.jobdt-header-img{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50rpx;
+
+}
+.jobdt-header-nick{
+  margin-top: 10rpx;
+  line-height: 45rpx;
+}
+.jobdt-sec{
+  margin: 10rpx 40rpx;
+  padding: 10rpx 0;
+}
+.jobdt-button{
+  margin: 150rpx 10rpx 50rpx 10rpx !important;
+}
+.col-class{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

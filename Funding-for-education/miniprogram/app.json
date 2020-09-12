@@ -1,0 +1,62 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/dynamic/dynamic",
+    "pages/user/user",
+    "pages/user-about/log",
+    "pages/CampusNews/news",
+    
+    "pages/JobsForm/form",
+    "pages/publish/publish",
+    "pages/admin/admin",
+    "pages/NewsMannger/index",
+    "pages/jobdetail/index",
+    "pages/dynamicdetail/index",
+    "pages/signin/index",
+    "pages/message/message",
+    "pages/daka/daka"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#18a851",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-on.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "动态",
+        "iconPath": "images/publish.png",
+        "selectedIconPath": "images/publish-on.png",
+        "pagePath": "pages/dynamic/dynamic"
+      },
+      {
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-on.png",
+        "pagePath": "pages/user/user"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

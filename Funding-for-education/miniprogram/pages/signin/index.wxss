@@ -1,0 +1,20 @@
+/* pages/signin/index.wxss */
+.list{
+  margin: 20rpx;
+  padding: 0 15rpx;
+  background: #fff;
+}
+.listheader{
+  background: #fff;
+  color: #333;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.nopeople{
+  position: absolute;
+top: 50%;
+margin-top: -245rpx;
+left: 50%;
+margin-left: -250rpx;
+
+}

@@ -1,0 +1,81 @@
+/* pages/jobdetail/index.wxss */
+.jobdt-content{
+  background: #fff;
+  margin: 30rpx 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding: 10rpx;
+}
+.jobdt-header{
+  height: 100rpx;
+
+}
+.jobdt-header-img{
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 10rpx;
+  margin-top: 15rpx;
+
+}
+.jobdt-header-img1{
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 10rpx;
+  margin-top: 15rpx;
+
+}
+.jobdt-header-nick{
+  margin-top: 10rpx;
+  line-height: 45rpx;
+  color: #0a82b1;
+}
+.jobdt-sec{
+  margin: 10rpx 40rpx;
+  padding: 10rpx 0;
+}
+.jobdt-sec1{
+  margin: 10rpx 40rpx;
+  padding: 10rpx 0;
+  width: 75%;
+  margin-left: 20%;
+}
+.jobdt-button{
+  margin: 150rpx 10rpx 50rpx 10rpx !important;
+}
+.col-class{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.pingluntext{
+  font-size: 24rpx;
+  margin-left: auto;
+  color:#888
+}
+.pingluncontent{
+  white-space: normal;
+  color: #333;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 10rpx;
+  
+}
+.pinglunlist{
+  border-bottom: 1rpx solid #eee;
+}
+.bottompinglun{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1rpx solid #eee;
+  box-shadow: 0 0 10rpx #eee;
+  
+}
+.myinput{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  margin: 20rpx 0;
+}

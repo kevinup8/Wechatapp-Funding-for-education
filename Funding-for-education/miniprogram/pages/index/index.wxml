@@ -1,0 +1,44 @@
+<cu-custom bgColor="bg-gradual-blue"isBack="{{false}}">
+    <view slot="content">校园服务</view>
+</cu-custom>
+
+<!-- 轮播图 -->
+<custom-swiper imgUrls="{{carouselImgUrls}}"></custom-swiper>
+
+<view class="middle">
+    <view bindtap="tofunction" class="middle_box shadow-blur light shadow-blur animation-scale-up bg-{{item.color}}" data-id="{{index}}" wx:for="{{functions}}" wx:key="key">
+        <view class="box_right">
+            <view class="box_righttop">{{item.name}}</view>
+            <view class="box_rightlow">
+                <text style="font-size:50rpx;margin:3rpx;color:red;">{{item.numbers}}</text>{{item.classifier}}</view>
+        </view>
+
+        <view class="box_left">
+            <image class="box_img" src="{{item.iconpath}}"></image>
+        </view>
+
+    </view>
+</view>
+
+<!-- 模态窗口 -->
+<view class="cu-modal  {{modalName=='Image'?'show':''}}">
+    <view class="cu-dialog">
+        <view class="bg-img" style="background-image: url('https://img.zcool.cn/community/031d9e757774aec0000012e7ee50edd.jpg');height:200px;">
+            <view class="cu-bar justify-end text-white">
+                <view bindtap="hideModal" class="action text-black">
+                    <text class="cuIcon-close"></text>
+                </view>
+            </view>
+        </view>
+
+        <!-- 弹出名片 -->
+        <view class="bg-white ">
+            <view class="action text-xl text-orange flex-sub  solid-left">欢迎</view>
+        </view>
+        
+        <!-- <view class="bg-white " wx:if="{{about}}" wx:for="{{about}}">
+            <view class="action   bg-white text-gray  flex-sub  solid-left">{{item}}</view>
+        </view> -->
+        <view style="bg-white  magrin-bottom:50rpx;height:10rpx;"></view>
+    </view>
+</view>

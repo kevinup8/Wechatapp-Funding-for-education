@@ -1,0 +1,134 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"enhance": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"enablePullDownRefresh": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": true
+	},
+	"appid": "wx94ae30e4fdc86d8d",
+	"projectname": "test01",
+	"libVersion": "2.11.0",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/CampusNews/news",
+					"pathName": "pages/CampusNews/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "管理员",
+					"pathName": "pages/admin/admin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/NewsMannger/index",
+					"pathName": "pages/NewsMannger/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/JobsForm/form",
+					"pathName": "pages/JobsForm/form",
+					"query": "stationid=5feb61565ea9375c0014723052f740bc",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/CampusNews/news",
+					"pathName": "pages/CampusNews/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/StuJobs/Jobs",
+					"pathName": "pages/StuJobs/Jobs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/jobdetail/index",
+					"pathName": "pages/jobdetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/dynamic/dynamic",
+					"pathName": "pages/dynamic/dynamic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "pages/dynamicdetail/index",
+					"pathName": "pages/dynamicdetail/index",
+					"query": "item= {\"_id\":\"d38a536e5eaa8c9b002b697976804e0e\",\"content\":\"12321312\",\"create_time\":\"2020-04-30 16:30:19\",\"image\":[\"cloud://dev-gd1ob.6465-dev-gd1ob-1259736068/1588235381811.png\",\"cloud://dev-gd1ob.6465-dev-gd1ob-1259736068/1588235397725.png\",\"cloud://dev-gd1ob.6465-dev-gd1ob-1259736068/1588235407182.png\"],\"openid\":\"oOIFH4xfHd9QQ92DsUUoLh9KiZS4\",\"pnum\":0,\"status\":0,\"type\":\"feeling\",\"update_time\":\"2020-04-30 16:30:19\",\"zan\":0,\"UserInfo\":{\"_id\":\"593e51e65ea84ce70004ec48528e4cd7\",\"avatarUrl\":\"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLa1cXmWS65AicFkUlQlnHH9CzgoQYkQ4QuEX3h2OqoYkWjH5Xv1I3dj7kjSoyn1faUSQBIXHtchhA/132\",\"city\":\"Xuzhou\",\"created\":\"2020-04-28 15:33:59\",\"gender\":1,\"nickName\":\"A.充满希望的明天\",\"openid\":\"oOIFH4xfHd9QQ92DsUUoLh9KiZS4\",\"province\":\"Jiangsu\",\"userInfo\":{\"appId\":\"wx94ae30e4fdc86d8d\",\"openId\":\"oOIFH4xfHd9QQ92DsUUoLh9KiZS4\"}}}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/signin/index",
+					"pathName": "pages/signin/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

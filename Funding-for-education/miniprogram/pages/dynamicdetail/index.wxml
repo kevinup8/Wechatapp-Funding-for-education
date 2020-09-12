@@ -1,0 +1,84 @@
+<!--pages/dynamicdetail/index.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">动态详情</view>
+</cu-custom>
+
+<view class="jobdt-content">
+	<i-row i-class='jobdt-header'>
+		<i-col span="5" i-class="col-class" style="text-align:center">
+			<image class="jobdt-header-img" src="{{stationsInfo.UserInfo.avatarUrl}}"></image>
+		</i-col>
+		<i-col span="19" i-class="col-class jobdt-header-nick">
+			<view style="display:flex">
+				<view>{{stationsInfo.UserInfo.nickName}}</view>
+				<view bindtap="zan" style="margin-left:auto;margin-right:20rpx">
+					<i-icon type="praise" color="#11cd6e" size="30" />
+				</view>
+			</view>
+
+
+		</i-col>
+
+	</i-row>
+	<view style="display:flex;position:relative;bottom:20rpx">
+		<view style="width:20%;">
+			<image style="visibility:hidden" class="jobdt-header-img" src="{{stationsInfo.UserInfo.avatarUrl}}"></image>
+		</view>
+		<view style="width:80%;">
+
+			<text>{{stationsInfo.content}}
+			</text>
+		</view>
+	</view>
+
+	<i-row i-class='jobdt-sec1'>
+		<i-col wx:for="{{stationsInfo.image}}" span="8" i-class="col-class" wx:for-item='img' wx:for-index='index' wx:key="key">
+			<image style="max-height:150rpx" mode="aspectFit" src="{{img}}"></image>
+		</i-col>
+
+
+	</i-row>
+	<view style="display:flex;margin-left:20%;margin-top:20rpx;height:40rpx;line-height:40rpx">
+		<view style="color:#ccc;font-size:24rpx;">{{stationsInfo.update_time}}</view>
+		<view wx:if="{{showdelete}}" style="color:#0a82b1;font-size:24rpx;margin-left:250rpx" bindtap="deletepinglun" data-id="{{stationsInfo._id}}">删除</view>
+	</view>
+
+
+
+</view>
+
+<view wx:if="{{pinglun.length>0}}" class="jobdt-content" style="margin-bottom:280rpx">
+	<i-row class='pinglunlist' wx:for="{{pinglun}}" data-nickName="{{item.UserInfo.nickName}}" data-repeatwho="{{item.openid}}" bindtap="secondrepeat" wx:for-item="item" wx:for-index="index" wx:key="key">
+		<i-col span="5" i-class="col-class" style="text-align:center">
+			<image class="jobdt-header-img1" src="{{item.UserInfo.avatarUrl}}"></image>
+		</i-col>
+		<i-col span="19" i-class="col-class jobdt-header-nick">
+			<view style="display:flex">
+				<view style="font-size:28rpx">{{item.UserInfo.nickName}}</view>
+				<view class="pingluntext">{{item.create_time}}</view>
+			</view>
+
+			<view class="pingluncontent">
+				<block wx:if="{{item.isseccond}}">回复<text style="color:#0a82b1"> {{item.repeatUserInfo.nickName}}:</text></block>{{item.content}}
+			</view>
+		</i-col>
+
+	</i-row>
+
+
+
+</view>
+
+<view class="bottompinglun" style="height:{{height}}rpx">
+	<i-row>
+		<i-col span="18" i-class="col-class"> <input class="myinput" value="{{ repeat }}" focus="{{focus}}" bindblur="checkfocus" confirm-type='send' type="text" bindconfirm="repeat" bindinput="setrepeat" mode="normal" placeholder="{{placeholder}}" />
+		</i-col>
+		<i-col span="6" i-class="col-class">
+			<i-button bind:click="repeat" type="success" size="small">发送</i-button>
+		</i-col>
+
+	</i-row>
+
+
+</view>

@@ -1,0 +1,50 @@
+<cu-custom bgColor="bg-gradual-pink" isCustom="{{true}}">
+	<view slot="content">岗位详情</view>
+</cu-custom>
+
+<view class="jobdt-content">
+  <i-row i-class='jobdt-header'>
+    <i-col span="6" i-class="col-class" style="text-align:center">
+      <image class="jobdt-header-img" src="{{src}}"></image>
+    </i-col>
+    <i-col span="18" i-class="col-class jobdt-header-nick">
+        <view>{{nickName}}</view>
+        <view style="color:#ccc;font-size:24rpx">{{stationsInfo.updatetime}}</view>
+    </i-col>
+   
+</i-row>
+<i-row i-class='jobdt-sec'>
+    <i-col span="18" i-class="col-class" style='font-size:50rpx'>{{stationsInfo.title}}</i-col>
+    <i-col span="6" i-class="col-class" style='color:#666'></i-col>
+  
+</i-row>
+<i-row i-class='jobdt-sec'>
+    <i-col span="6" i-class="col-class">工资:</i-col>
+    <i-col span="18" i-class="col-class" style='color:orange'>{{stationsInfo.price}}元/     <text wx:if="{{stationsInfo.unit=='day'}}">天</text>
+          <text wx:elif="{{stationsInfo.unit=='week'}}">周</text>
+          <text wx:elif="{{stationsInfo.unit=='month'}}">月</text></i-col>
+  
+</i-row>
+<i-row i-class='jobdt-sec'>
+    <i-col span="6" i-class="col-class">人数:</i-col>
+    <i-col span="18" i-class="col-class" style='color:#666'>{{stationsInfo.people}}人</i-col>
+  
+</i-row>
+<i-row i-class='jobdt-sec'>
+    <i-col span="6" i-class="col-class">天数:</i-col>
+    <i-col span="18" i-class="col-class" style='color:#666'>{{stationsInfo.starttime}} ～ {{stationsInfo.endtime}}</i-col>
+  
+</i-row>
+<i-row i-class='jobdt-sec'>
+    <i-col span="6" i-class="col-class">工作时段:</i-col>
+    <i-col span="18" i-class="col-class" style='color:#666'>{{stationsInfo.workstart}} ～ {{stationsInfo.workend}}</i-col>
+  
+</i-row>
+<i-row i-class='jobdt-sec'>
+    <i-col span="6" i-class="col-class">工作内容:</i-col>
+    <i-col span="18"  style='color:#888;font-size:26rpx'>{{stationsInfo.discription}}</i-col>
+  
+</i-row>
+
+<i-button type="info" i-class="jobdt-button" bind:click="handleClickBaoming" disabled="{{stationsInfo.issignup}}">{{stationsInfo.issignup?'已报名':'我要报名'}}</i-button>
+</view>

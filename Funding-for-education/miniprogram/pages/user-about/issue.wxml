@@ -1,0 +1,32 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">反馈</view>
+</cu-custom>
+
+
+
+<form bindsubmit='issue'>
+
+	<view class="margin-xl padding-lg bg-white radius shadow-lg">
+
+		<view>
+			<textarea placeholder="在此输入反馈" maxlength="-1" placeholder-class='placeholder' name="issue"></textarea>
+		</view>
+
+		<view class="cu-form-group">
+			<view class="grid col-3 grid-square flex-sub">
+				<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+					<image src='{{imgList[index]}}' mode='aspectFill'></image>
+					<view class="cu-tag bg-black" catchtap="closeimg" data-index="{{index}}">
+						<text class="icon-close text-gray "></text>
+					</view>
+				</view>
+				<view class="solids" bindtap="choose" wx:if="{{imgList.length<1}}">
+					<text class="cuIcon-camerafill"></text>
+				</view>
+			</view>
+		</view>
+		<button class='cu-btn bg-black lg margin-top-xl flex flex-direction' form-type='submit'>反馈</button>
+	</view>
+
+</form>

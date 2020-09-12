@@ -1,0 +1,149 @@
+/*
+ * 
+ * WordPres版微信小程序
+ * author: NiZerin
+ * organization: 泽林博客 www.iacblog.com
+ * github:    https://github.com/CrazyNing98/WeChatMiniProgram-Blog
+ * 技术支持微信号：NINGCZ19980501
+ * 开源协议：MIT
+ * 
+ *  *Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
+ */
+
+
+.readlog-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6082BB;
+  height: 320rpx;
+  width: 100%;
+}
+
+.userinfo-avatar {
+  width: 135rpx;
+  height: 135rpx;
+  margin: 40rpx 0 25rpx;
+  border-radius: 50%;
+  border: 12rpx solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+.feedback-button {
+  opacity: 0;
+  position: absolute;
+  width: 100vw;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.contact-button {
+  opacity: 0;
+  position: absolute;
+  width: 100vw;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.user-cell{
+  width: 100%;
+  padding-top: 10px;
+  background-color: #eeeeee;
+}
+
+.UCenter-bg {
+  background-image: url(https://wx3.sinaimg.cn/mw690/006nMOhAgy1gen84vybegj30u00gwaee.jpg);
+  background-size: cover;
+  height: 550rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.UCenter-bg text {
+  opacity: 0.8;
+}
+
+.UCenter-bg image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+
+.middle-container {
+	height: 138rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 20rpx;
+	background-color: #FFFFFF;
+	margin: -30rpx 30rpx 26rpx 30rpx;
+	box-shadow: 0 15rpx 10rpx -15rpx #efefef;
+	position: relative;
+	z-index: 2;
+
+}
+
+
+.menu {
+	border-radius: 10rpx;
+}
+
+.middle-item {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ticket-img {
+	width: 80rpx;
+	height: 80rpx;
+	margin-left: 65rpx;
+}
+
+.middle-tag {
+	font-size: 28rpx;
+	color: #333333;
+	line-height: 28rpx;
+	font-weight: bold;
+	padding-left: 22rpx;
+}
+
+.car-img {
+	width: 80rpx;
+	height: 80rpx;
+	margin-left: 97rpx;
+}
+
+.menuleft {
+	margin-left: 22px;
+}

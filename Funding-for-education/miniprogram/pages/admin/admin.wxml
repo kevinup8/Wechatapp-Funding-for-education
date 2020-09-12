@@ -1,0 +1,25 @@
+<!--pages/admin/admin.wxml-->
+<!-- <cu-custom bgImage="https://wx4.sinaimg.cn/mw690/006nMOhAgy1gen808dkegj30nj0bw0tb.jpg" isBack="{{true}}">
+	<view slot="backText">返回</view>
+    <view slot="content">管理</view>
+</cu-custom> -->
+
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">管理</view>
+</cu-custom>
+
+<view class="middle">
+    <view bindtap="tofunction" class="middle_box shadow-blur light shadow-blur animation-scale-up bg-{{item.color}}" data-id="{{index}}" wx:for="{{functions}}" wx:key="key">
+        <view class="box_right">
+            <view class="box_righttop">{{item.name}}</view>
+            <view class="box_rightlow">
+                <text style="font-size:50rpx;margin:3rpx;color:red;">{{item.numbers}}</text>{{item.classifier}}</view>
+        </view>
+
+        <view class="box_left">
+            <image class="box_img" src="{{item.iconpath}}"></image>
+        </view>
+
+    </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+      "custom-swiper": "../../components/customSwiper/customSwiper",
+      "cu-custom": "/colorui/components/cu-custom",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index"
+  }
+}

@@ -1,0 +1,65 @@
+.banner {
+  width: 100%;
+  height: 220px;
+  box-shadow: 5px 5px 10px #1bdbd2;
+}
+.banner image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.scrollPage {
+  width: 100%;
+  background: rgb(247, 247, 247);
+}
+.list {
+  margin-top: 20rpx #ccc solid;
+  width: 90vw;
+  margin:5vh 5vw;
+  background: #fff;
+  border-radius: 20rpx;
+  border:1px rgb(208, 212, 210) solid;
+  padding: 20rpx;
+  box-shadow: 0 0 10rpx #e8e9e9;
+}
+.userF {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.userF image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userF view {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rpx;
+}
+.bbg {
+  color: rgb(90, 90, 90);
+  font-size: 32rpx;
+}
+.xxg {
+  color: rgb(150, 150, 150);
+  font-size: 26rpx;
+}
+.newscontent {
+  color: #666;
+  font-size: 32rpx;
+  padding: 3vh 0;
+}
+.imglist {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.imglist image {
+  width: 26vw;
+  height: 26vw;
+  margin:0  1vw;
+}
